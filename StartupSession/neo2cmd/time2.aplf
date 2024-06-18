@@ -1,0 +1,14 @@
+ r←{opts}time2 args
+⍝] 1S -fmt=
+ ;as;asa
+ :If ~900⌶⍬
+ :AndIf 0<opts.HELP
+     r←'help level ',⍕opts.HELP
+ :Else
+     :If 0≡opts.fmt
+         opts.fmt←'%ISO%'
+     :EndIf
+     args,←'J'/⍨0=≢args
+     r←opts.fmt(1200⌶)1 ⎕DT⊃args
+ :EndIf
+ :Implements Constructor

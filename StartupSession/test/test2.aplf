@@ -1,0 +1,9 @@
+ test2←{
+ ⍝]
+     0=≢⍵:'abc'
+     ⎕←'Parameters:',' ',¨⍺.⎕NL ¯2
+     ⎕←'Utilities:',' ',¨⍺.⎕NL ¯3
+     ⎕←'Calling space: ',⍕⍺.THIS
+     ⎕←'Help level: ',⍕⍺.HELP
+     ⎕←'Call: ',⍕⍺.(ns fn)
+ }

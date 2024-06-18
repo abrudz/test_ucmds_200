@@ -1,0 +1,7 @@
+ r←opts error args
+⍝]
+ :If 0<opts.HELP
+     r←'halp',⍕opts.HELP
+ :Else
+     ÷0
+ :EndIf

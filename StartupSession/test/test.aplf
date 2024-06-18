@@ -1,0 +1,7 @@
+ test←{
+ ⍝]
+     ¯1=⍺.HELP:'about test group'
+     0≠⍺.HELP:'about test level ',⍕⍺.HELP
+     'result'
+
+ }

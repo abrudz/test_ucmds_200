@@ -1,0 +1,8 @@
+ r←opts time args;If
+⍝]
+ :If 0<opts.HELP
+ r←'help level ',⍕opts.HELP
+ :Else
+    args,←'J'/⍨0=≢args
+     r←⊃'%ISO%'(1200⌶)1 ⎕DT⊃args
+ :EndIf

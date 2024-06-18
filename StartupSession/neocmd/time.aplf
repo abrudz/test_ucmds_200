@@ -1,0 +1,11 @@
+ r←opts time args
+⍝] 1S -fmt=
+ :If 0<opts.HELP
+ r←'help level ',⍕opts.HELP
+ :Else
+     :If 0≡opts.fmt
+         opts.fmt←'%ISO%'
+     :EndIf
+     args,←'J'/⍨0=≢args
+     r←opts.fmt(1200⌶)1 ⎕DT⊃args
+ :EndIf

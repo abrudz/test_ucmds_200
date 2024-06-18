@@ -1,0 +1,5 @@
+ exec←{
+ ⍝] 1L
+     local←'local'
+     ⍺.EXEC ⊃⍵
+ }
